@@ -1,0 +1,18 @@
+@startuml
+!theme reddress-darkblue
+skinparam linetype ortho
+skinparam classFontColor dimgrey
+skinparam sequenceMessageAlign direction
+skinparam groupInheritance 2
+skinparam Roundcorner 20
+skinparam shadowing true
+skinparam class {
+BackgroundColor #002D55FF
+ArrowColor black
+BorderColor #ADEFD1FF
+AttributeFontName Candara
+AttributeFontStyle Italic
+FontColor  #DFDCE5FF
+BorderThickness 0.25
+}
+
