@@ -12,4 +12,16 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
+    <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+        <ItemGroup>
+            <_CustomFiles Include="..\GitHooks\commit-msg"/>
+        </ItemGroup>
+        <Copy SourceFiles="@(_CustomFiles)" DestinationFolder="./../.git/hooks"/>
+
+        <!-- Set the executable flag for the file on Ubuntu -->
+        <Exec Condition="'$(OS)' == 'Unix'" Command="chmod +x './../.git/hooks/commit-msg'"/>
+        <!-- Do nothing on Windows -->
+        <Exec Condition="'$(OS)' == 'Windows_NT'" Command="echo Skipping chmod on Windows"/>
+    </Target>
+
 </Project>
