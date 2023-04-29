@@ -18,7 +18,7 @@
         </ItemGroup>
         <Copy SourceFiles="@(_CustomFiles)" DestinationFolder="./../.git/hooks"/>
 
-        <!-- Set the executable flag for the file on Ubuntu -->
+        <!-- Set the executable flag for the file on Unix based systems -->
         <Exec Condition="'$(OS)' == 'Unix'" Command="chmod +x './../.git/hooks/commit-msg'"/>
         <!-- Do nothing on Windows -->
         <Exec Condition="'$(OS)' == 'Windows_NT'" Command="echo Skipping chmod on Windows"/>
