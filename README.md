@@ -20,7 +20,7 @@ a shell fan, you can accomplish the same outcome (getting to build the project) 
     ```
 2. Set working directory.
     ```
-    cd ./Inoversity.Library.WebApi/IniversityLibrary/
+    cd ./Inoversity.Library.WebApi/InoversityLibrary/
     ```
 3. Restore dependencies.
     ```
