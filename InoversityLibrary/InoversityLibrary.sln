@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Infrastructure.Integration", "InoversityLibrary.Infrastructure.Integration\InoversityLibrary.Infrastructure.Integration.csproj", "{894CDB46-6956-4C76-9642-511FD83BD946}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Infrastructure.Distribution", "InoversityLibrary.Infrastructure.Distribution\InoversityLibrary.Infrastructure.Distribution.csproj", "{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{894CDB46-6956-4C76-9642-511FD83BD946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894CDB46-6956-4C76-9642-511FD83BD946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894CDB46-6956-4C76-9642-511FD83BD946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{99DEBAA1-F19F-41B4-8D2B-0C09FF4E35E1} = {2F260163-3FF0-4D3E-9193-0B10FD974C98}
@@ -56,5 +62,6 @@ Global
 		{262861BC-67AF-4BEA-8723-75F70AFED120} = {2F260163-3FF0-4D3E-9193-0B10FD974C98}
 		{0A88305D-E47F-46AF-B0CC-7E245377AC20} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
 		{894CDB46-6956-4C76-9642-511FD83BD946} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
+		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
 	EndGlobalSection
 EndGlobal
