@@ -4,7 +4,7 @@
 Inoversity Library **Web Api** built in C# using the
 `Ports & Adapters` architecture, aka `Clean Architecture`.
 
-<img src="./Assets/ApplicationArchitecture.svg" alt="Microservice Architecture">
+<img src="./assets/applicationArchitecture.svg" alt="Microservice Architecture">
 
 ## Developer Setup Guide
 

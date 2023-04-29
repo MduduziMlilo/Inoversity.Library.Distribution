@@ -14,7 +14,7 @@
 
     <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
         <ItemGroup>
-            <_CustomFiles Include="..\GitHooks\commit-msg"/>
+            <_CustomFiles Include="..\githooks\commit-msg"/>
         </ItemGroup>
         <Copy SourceFiles="@(_CustomFiles)" DestinationFolder="./../.git/hooks"/>
 
