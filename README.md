@@ -8,10 +8,11 @@ Inoversity Library **Web Api** built in C# using the
 
 ## Developer Setup Guide
 
-> **_INFO:_** The project requires dotnet version 7. To install dotnet, head
-> over to [microsoft](https://dotnet.microsoft.com/en-us/) for installation details.
+> **_INFO:_** The project requires .NET 7. To install dotnet, head
+> over to [microsoft](https://dotnet.microsoft.com/en-us/download) for installation details.
 
-This section outlines the development setup of the `Inoversity Library Web Api`.
+This section outlines the development setup of the `Inoversity Library Web Api`. If you're not
+a shell fan, you can accomplish the same outcome (getting to build the project) using your preferred IDE.
 
 1. Clone the repository to your development environment.
     ```
