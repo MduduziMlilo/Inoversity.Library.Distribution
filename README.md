@@ -8,11 +8,29 @@ Inoversity Library **Web Api** built in C# using the
 
 ## Developer Setup Guide
 
-This section outlines the development setup of the `Inoversity Library Web Api`.
-> **_NOTE:_** These steps will apply when the project's directory has been set as
-> the working directory. Adjust accordingly if the working directory is different
-> from project directory.
+> **_INFO:_** The project requires dotnet version 7. To install dotnet, head
+> over to [microsoft](https://dotnet.microsoft.com/en-us/) for installation details.
 
+This section outlines the development setup of the `Inoversity Library Web Api`.
+
+1. Clone the repository to your development environment.
+    ```
+    git clone <repository_url>
+    ```
+2. Set working directory.
+    ```
+    cd ./Inoversity.Library.WebApi/IniversityLibrary/
+    ```
+3. Restore dependencies.
+    ```
+    dotnet restore .
+    ```
+4. Build up the project.
+    ```
+    dotnet build .
+    ```
+
+That will be all. Code ahead.
 
 ## Docker Setup Guide
 
@@ -21,8 +39,9 @@ This section outlines the setup for a docker container.
 ## Stack Overview
 
 ### Overall
-| Library        | Description               | External Content                 |
-|----------------|---------------------------|----------------------------------|
+
+| Library | Description | External Content |
+|---------|-------------|------------------|
 
 ### API Server
 | Library                                 | Description            | External Content                                                                                     |
@@ -38,11 +57,14 @@ This section outlines the setup for a docker container.
 |-------------|---------------------|----------------------------------|
 
 ## Features
-
 ### Included
 
+- [X] Setup conventional commits
+- [X] Github actions [Continious Integration](https://www.atlassian.com/continuous-delivery/continuous-integration)
 
 ### Feature Backlog
+
+- [ ] Security
 - [ ] Kubernetes cluster integration
 - [ ] Event messaging integration
 - [ ] API Stress Testing
