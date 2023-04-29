@@ -18,12 +18,16 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
     <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
         <ItemGroup>
             <_CustomFiles Include="./../../githooks/commit-msg" />
         </ItemGroup>
         <Copy SourceFiles="@(_CustomFiles)" DestinationFolder="./../../.git/hooks" />
-        <!-- Set the executable flag for the file on Ubuntu -->
+        <!-- Set the executable flag for the file on Unix systems -->
         <Exec Condition="'$(OS)' == 'Unix'" Command="chmod +x './../../.git/hooks/commit-msg'" />
 
     </Target>
