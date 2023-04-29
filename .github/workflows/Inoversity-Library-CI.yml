@@ -21,8 +21,10 @@ jobs:
           dotnet-version: 7.0.x
       - name: Restore dependencies
         run: dotnet restore
+        working-directory: ${{env.working-directory}}
       - name: Build
         working-directory: ${{env.working-directory}}
         run: dotnet build --no-restore
       - name: Test
+        working-directory: ${{env.working-directory}}
         run: dotnet test --no-build --verbosity normal
