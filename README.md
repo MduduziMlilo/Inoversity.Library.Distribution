@@ -26,7 +26,7 @@ a shell fan, you can accomplish the same outcome (getting to build the project) 
     ```
     dotnet restore .
     ```
-4. Build up the project.
+4. Build up the project solution.
     ```
     dotnet build .
     ```
