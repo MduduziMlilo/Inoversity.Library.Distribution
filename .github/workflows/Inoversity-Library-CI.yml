@@ -2,9 +2,9 @@ name: Inoversity-Library-CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main", "domainModel" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
