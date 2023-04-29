@@ -25,7 +25,7 @@
 
     <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
         <ItemGroup>
-            <_CustomFiles Include="./../../githooks/commit-msg" />
+            <_CustomFiles Include="./../../.github/githooks/commit-msg" />
         </ItemGroup>
         <Copy SourceFiles="@(_CustomFiles)" DestinationFolder="./../../.git/hooks" />
         <!-- Set the executable flag for the file on Unix systems -->
