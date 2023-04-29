@@ -18,68 +18,68 @@ BorderThickness 0.25
 
 ' some class definitions
 class InoversityLibraryManagementSystem {
-    userName: string
-    userPassword: string
-    login(): void
-    register(): void
-    logout(): void
+    UserName: string
+    UserPassword: string
+    Login(): void
+    Register(): void
+    Logout(): void
 }
 
 ' these classes will be grouped together
 together {
 class Staff {
-    staffNumber: string
-    department: string
-    jobTitle: string
+    StaffNumber: string
+    Department: string
+    JobTitle: string
 }
 
 class Student {
-    studentNumber: string
-    faculty: string
-    school: string
-    programme: string
-    courses: string
+    StudentNumber: string
+    Faculty: string
+    School: string
+    Programme: string
+    Courses: string
 }
 
 class User {
-    firstName: string
-    lastName: string
-    id: string
-    roleLevel: string
-    password: string
-    verify()
-    checkAccount()
-    getDocuments()
+    Id: string
+    FirstName: string
+    LastName: string
+    RoleLevel: string
+    Password: string
+    Verify()
+    CheckAccount()
+    GetDocuments()
 }
 }
 
 together {
 class Account {
-    loanedDocuments: List<string>
-    reservedDocuments: List<string>
-    returnedDocuments: List<string>
-    lostDocuments: List<string>
-    fineAmount: integer
-    calculateFine()
+    LoanedDocuments: List<string>
+    ReservedDocuments: List<string>
+    ReturnedDocuments: List<string>
+    LostDocuments: List<string>
+    FineAmount: integer
+    CalculateFine()
 }
 
 class LibraryDatabase {
-    add()
-    delete()
-    update()
-    display()
-    search()
+    Add()
+    Delete()
+    Update()
+    Display()
+    Search()
 }
 
 class Document {
-    doc_title: string
-    author: string
-    publication: string
-    reservation_status()
-    docRequest()
-    docFeedback()
-    reviewInfo()
-    showDueDate()
+    DocumentTitle: string
+    Author: string
+    Publication: string
+    Reservation_status()
+    DocRequest()
+    DocFeedback()
+    ReviewInfo()
+    ShowDueDate()
 }
 }
 

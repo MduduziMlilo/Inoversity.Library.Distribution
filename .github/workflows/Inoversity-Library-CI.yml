@@ -2,7 +2,7 @@ name: Inoversity-Library-CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "domainModel" ]
   pull_request:
     branches: [ "main" ]
 
