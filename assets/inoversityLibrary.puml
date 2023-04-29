@@ -18,49 +18,49 @@ BorderThickness 0.25
 
 ' some class definitions
 class InoversityLibraryManagementSystem {
-    user_name: str
-    user_password: str
-    login()
-    register()
-    logout()
+    userName: string
+    userPassword: string
+    login(): void
+    register(): void
+    logout(): void
 }
 
 ' these classes will be grouped together
 together {
 class Staff {
-    staff_number: str
-    department: str
-    job_title: str
+    staffNumber: string
+    department: string
+    jobTitle: string
 }
 
 class Student {
-    student_number: str
-    faculty: str
-    school: str
-    programme: str
-    courses: str
+    studentNumber: string
+    faculty: string
+    school: string
+    programme: string
+    courses: string
 }
 
 class User {
-    first_name: str
-    last_name: str
-    id: str
-    role_level: str
-    password: str
+    firstName: string
+    lastName: string
+    id: string
+    roleLevel: string
+    password: string
     verify()
-    check_account()
-    get_documents()
+    checkAccount()
+    getDocuments()
 }
 }
 
 together {
 class Account {
-    loaned_documents: list[str]
-    reserved_documents: list[str]
-    returned_documents: list[str]
-    lost_documents: list[str]
-    fine_amount: int
-    calculate_fine()
+    loanedDocuments: List<string>
+    reservedDocuments: List<string>
+    returnedDocuments: List<string>
+    lostDocuments: List<string>
+    fineAmount: integer
+    calculateFine()
 }
 
 class LibraryDatabase {
@@ -72,14 +72,14 @@ class LibraryDatabase {
 }
 
 class Document {
-    doc_title: str
-    author: str
-    publication: strs
+    doc_title: string
+    author: string
+    publication: string
     reservation_status()
-    doc_request()
-    doc_feedback()
-    review_info()
-    show_due_date()
+    docRequest()
+    docFeedback()
+    reviewInfo()
+    showDueDate()
 }
 }
 
