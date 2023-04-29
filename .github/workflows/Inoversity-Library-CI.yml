@@ -1,4 +1,4 @@
-name: .NET
+name: Inoversity-Library-CI
 
 on:
   push:
