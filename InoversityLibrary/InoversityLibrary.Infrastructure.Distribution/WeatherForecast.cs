@@ -1,4 +1,4 @@
-namespace InoversityLibrary;
+namespace InoversityLibrary.Infrastructure.Distribution;
 
 public class WeatherForecast
 {
