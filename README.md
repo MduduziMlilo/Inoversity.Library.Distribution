@@ -47,7 +47,6 @@ This section outlines the setup for a docker container.
 ### API Server
 | Library                                 | Description            | External Content                                                                                     |
 |-----------------------------------------|------------------------|------------------------------------------------------------------------------------------------------|
-                                                                   |
 
 ### Testing
 | Library                                                              | Description                 | External Content                                                                                                                                     |
