@@ -59,13 +59,17 @@ This section outlines the setup for a docker container.
 
 ## Features
 ### Included
-
-- [X] Setup conventional commits
-- [X] Github actions [Continious Integration](https://www.atlassian.com/continuous-delivery/continuous-integration)
+- [X] Conventional commits
+- [X] Github actions [Continuous Integration](https://www.atlassian.com/continuous-delivery/continuous-integration)
 
 ### Feature Backlog
-
-- [ ] Security
-- [ ] Kubernetes cluster integration
+- [ ] Automatic semantic versioning
+- [ ] UnitTesting
+- [ ] Git tagging
+- [ ] Authentication
+- [ ] Documentation
+- [ ] Authorisation
+- [ ] Database migrations
+- [ ] Kubernetes cluster integration [Continuous Deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 - [ ] Event messaging integration
-- [ ] API Stress Testing
+- [ ] Api Stress Testing
