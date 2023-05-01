@@ -40,7 +40,6 @@ This section outlines the setup for a docker container.
 ## Stack Overview
 
 ### Overall
-
 | Library | Description | External Content |
 |---------|-------------|------------------|
 
