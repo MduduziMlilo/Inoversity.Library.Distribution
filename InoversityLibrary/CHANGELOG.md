@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.0.3"></a>
+## [0.0.3](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.0.3) (2023-5-1)
+
+### Bug Fixes
+
+* Another fix test. ([dde0cc7](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/dde0cc757813703889655bdd6c30d005a9e88d51))
+* CI fix test. ([eefdb79](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/eefdb79820a67bd4df26b060c227b968290a0827))
+
+### Other
+
+* Merge c5f2bafea9781b20ee074389dcbe6ad41b2ed02a into a27726e94b777d40a979fbb67a75085adea4727d ([c267a10](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/c267a1070d437c1e6eb86a5a43cc014b43c0d717))
+* Merge pull request #11 from MduduziMlilo/domainModel ([a2287e9](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/a2287e93a59790d194cd2b10178d67ff881918e4))
+* Merge pull request #12 from MduduziMlilo/domainModel ([26198dc](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/26198dccc3cb4321f6216e6e99fc74be90811b58))
+* Merge pull request #13 from MduduziMlilo/domainModel ([a27726e](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/a27726e94b777d40a979fbb67a75085adea4727d))
+* Merge pull request #9 from MduduziMlilo/main ([b951110](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/b951110d81012cac8742d7c42b1392cf7a119a0f))
+* Another test. ([184142e](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/184142edfaec06f9b8e0a56ddadfaf29f72800bf))
+* Back to basics. ([7abbf06](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/7abbf0688f00d9e74e519352200583aae045fd97))
+* Change PR branch reference. ([c5f2baf](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/c5f2bafea9781b20ee074389dcbe6ad41b2ed02a))
+* Conditionals giving issues. ([2b3c181](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/2b3c18150ab99fc8e022b4bcfb0573c219faee86))
+* Lets give it another try. ([c79d958](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/c79d958737c1da116feed40d7b8c628cd141fe69))
+* More tests. ([34859ab](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/34859ab8f13a16a1b0d2acbac2fea7392ade784b))
+* More tests. ([7e900f2](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/7e900f2c9e483cd4cf2ea31a17158e32dc336c76))
+* Sort syntax issues. ([15b67f8](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/15b67f846c99ca124b732353d02454403f62c78f))
+* This is tricky ([35cb13a](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/35cb13a3c7f5fde9db84e23a55203eb6aa8ba496))
+* Update push branch. ([29765d6](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/29765d65d2d20a0d3e0769956d0307588485b3dc))
+* Update version step. ([45135dd](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/45135dd0ec89cf3717c256fb05f792ab42211de6))
+* Use base_ref and not ref. ([7832a84](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/7832a8486db0ead5971a5b661ab1a6a724049ec6))
+* Versionize not installing. ([f9f3d74](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/f9f3d74f8cd5897005717a6812f58852f4b1528e))
+* **release:** 0.0.2 ([2a7a502](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/2a7a502fde51e6e3805c08d63ed9a8ddaeb07ae9))
+
 <a name="0.0.2"></a>
 ## [0.0.2](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.0.2) (2023-5-1)
 
