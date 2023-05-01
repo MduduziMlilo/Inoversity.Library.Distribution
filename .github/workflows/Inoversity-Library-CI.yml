@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       WORKING_DIR: ./InoversityLibrary
-      RUN_ON_MAIN: ${{ github.event_name == 'pull_request' && github.head_ref == 'main' }}
     defaults:
       run:
         working-directory: ${{env.WORKING_DIR}}
