@@ -2,7 +2,7 @@ name: Inoversity-Library-CI
 
 on:
   push:
-    branches: [ "main", "domainModel" ]
+    branches: [ "domainModel" ]
   pull_request:
     branches: [ "main" ]
 
@@ -11,10 +11,11 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-directory: ./InoversityLibrary
+      WORKING_DIR: ./InoversityLibrary
+      RUN_ON_MAIN: ${{ github.event_name == 'pull_request' && github.head_ref == 'master' }}
     defaults:
       run:
-        working-directory: ${{env.working-directory}}
+        working-directory: ${{env.WORKING_DIR}}
 
     steps:
       - uses: actions/checkout@v3
@@ -33,14 +34,17 @@ jobs:
         run: dotnet build --no-restore
         
       - name: Install Versionize
+        if: ${{ env.RUN_ON_MASTER }}
         run: dotnet tool install --global Versionize
         
       - name: Setup git
+        if: ${{ env.RUN_ON_MASTER }}
         run: |
           git config --local user.email "mduduzi.mlilo@hotmail.com"
           git config --local user.name "Mduduzi Mlilo"
           
       - name: Versionize Release
+        if: ${{ env.RUN_ON_MASTER }}
         id: versionize
         run: versionize --changelog-all --exit-insignificant-commits
         continue-on-error: true
@@ -53,7 +57,7 @@ jobs:
         if: steps.versionize.outcome == 'success'
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.WORKFLOOR_ACTIONS_TOKEN }}
+          github_token: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
           branch: ${{ github.ref }}
           tags: true
           
@@ -61,7 +65,7 @@ jobs:
         if: steps.versionize.outcome == 'success'
         uses: "actions/github-script@v5"
         with:
-          github-token: "${{ secrets.WORKFLOOR_ACTIONS_TOKEN }}"
+          github-token: "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}"
           script: |
             try {
               const tags_url = context.payload.repository.tags_url + "?per_page=1"
