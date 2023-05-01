@@ -26,7 +26,7 @@ a shell fan, you can accomplish the same outcome (getting to build the project) 
     ```
     dotnet restore .
     ```
-4. Build up the project.
+4. Build up the project solution.
     ```
     dotnet build .
     ```
@@ -40,14 +40,12 @@ This section outlines the setup for a docker container.
 ## Stack Overview
 
 ### Overall
-
 | Library | Description | External Content |
 |---------|-------------|------------------|
 
 ### API Server
 | Library                                 | Description            | External Content                                                                                     |
 |-----------------------------------------|------------------------|------------------------------------------------------------------------------------------------------|
-                                                                   |
 
 ### Testing
 | Library                                                              | Description                 | External Content                                                                                                                                     |
@@ -59,13 +57,17 @@ This section outlines the setup for a docker container.
 
 ## Features
 ### Included
-
-- [X] Setup conventional commits
-- [X] Github actions [Continious Integration](https://www.atlassian.com/continuous-delivery/continuous-integration)
+- [X] Conventional commits
+- [X] Github actions [Continuous Integration](https://www.atlassian.com/continuous-delivery/continuous-integration)
 
 ### Feature Backlog
-
-- [ ] Security
-- [ ] Kubernetes cluster integration
+- [ ] Automatic semantic versioning
+- [ ] UnitTesting
+- [ ] Git tagging
+- [ ] Authentication
+- [ ] Documentation
+- [ ] Authorisation
+- [ ] Database migrations
+- [ ] Kubernetes cluster integration [Continuous Deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 - [ ] Event messaging integration
-- [ ] API Stress Testing
+- [ ] Api Stress Testing
