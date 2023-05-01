@@ -33,17 +33,17 @@ jobs:
         run: dotnet build --no-restore
         
       - name: Install Versionize
-        if: github.event_name == 'pull_request' && github.head_ref == 'develop'
+        if: github.event_name == 'pull_request' && github.base_ref == 'develop'
         run: dotnet tool install --global Versionize
         
       - name: Setup git
-        if: github.event_name == 'pull_request' && github.head_ref == 'develop'
+        if: github.event_name == 'pull_request' && github.base_ref == 'develop'
         run: |
           git config --local user.email "mduduzi.mlilo@hotmail.com"
           git config --local user.name "Mduduzi Mlilo"
           
       - name: Versionize Release
-        if: github.event_name == 'pull_request' && github.head_ref == 'develop'
+        if: github.event_name == 'pull_request' && github.base_ref == 'develop'
         id: versionize
         run: versionize --changelog-all --exit-insignificant-commits
         continue-on-error: true
@@ -53,15 +53,15 @@ jobs:
         run: echo "Skipping Release. No release required."
         
       - name: Push changes to GitHub
-        if: steps.versionize.outcome == 'success' && github.event_name == 'pull_request' && github.head_ref == 'develop'
+        if: steps.versionize.outcome == 'success' && github.event_name == 'pull_request' && github.base_ref == 'develop'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
-          branch: ${{ github.head_ref }}
+          branch: ${{ github.base_ref }}
           tags: true
           
       - name: "Create release"
-        if: steps.versionize.outcome == 'success' && github.event_name == 'pull_request' && github.head_ref == 'develop'
+        if: steps.versionize.outcome == 'success' && github.event_name == 'pull_request' && github.base_ref == 'develop'
         uses: "actions/github-script@v5"
         with:
           github-token: "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}"
