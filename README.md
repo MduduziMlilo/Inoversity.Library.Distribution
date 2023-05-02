@@ -60,6 +60,7 @@ This section outlines the setup for a docker container.
 - [X] Conventional commits
 - [X] Github actions [Continuous Integration](https://www.atlassian.com/continuous-delivery/continuous-integration)
 - [X] Automatic semantic versioning
+- [X] Standard branch name format
 
 ### Feature Backlog
 - [ ] UnitTesting
