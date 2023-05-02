@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-while read local_ref
+while read local_ref local_sha remote_ref remote_sha
 do
   reg="^refs/heads/(feature|bugfix|experiment)/[A-Z][a-z0-9]+(-[a-z0-9]+)*$|^refs/heads/(main|develop)$"
   # Check if the branch being pushed matches the desired format
