@@ -8,8 +8,6 @@ do
   if [[ "$local_ref" =~  $reg ]]; then
   	exit 0
   else
-    echo "$local_ref $local_sha $remote_ref $remote_sha"
-    
     echo "Error: Branch name must be one of the following: 
     feature/*,
     bugfix/*, 
