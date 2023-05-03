@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.1) (2023-5-3)
+
+### Bug Fixes
+
+* Allow pushes if local or remote branch name conforms. ([812d370](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/812d37094b8c320b20cba1674f745d1f63bb5e00))
+* Enable pre-push githook. ([dd7741f](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/dd7741f860ba565f856dec6574713a71185520b5))
+
+### Other
+
+* Merge 812d37094b8c320b20cba1674f745d1f63bb5e00 into 45f5860c7a9b4368e721d4de37a7debf3dd20177 ([28f7d3e](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/28f7d3e4e0178b1142732a520325e64265278947))
+* Debug ci. ([91bc69f](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/91bc69f32b260bbc3d4bd270f836734a1833fd23))
+
+<a name="0.1.0"></a>
+## [0.1.0](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.0) (2023-5-3)
+
+### Features
+
+* Standardise branch names. ([c5d2984](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/c5d2984d8636a8220ea9f107db8513abd0978cd9))
+
+### Bug Fixes
+
+* Fix pre push git hook. ([a3941b4](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/a3941b4682cb706f766839308eaa27c646366db1))
+
+### Other
+
+* Enforce branch names format. ([49ce06f](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/49ce06f37e6794c6456bad291230bd7c1aa3b24f))
+* Enforce branch names format. ([ff34552](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/ff34552b4cf91f7d5be2a2e9dc6392889ea6320f))
+* Merge 01d22c43fec8df7cafacf69e340812eed73a32e5 into a3941b4682cb706f766839308eaa27c646366db1 ([f41c442](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/f41c442549e4707211417cf134c0b14e353889b9))
+* Merge pull request #18 from MduduziMlilo/develop ([5c15451](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/5c15451b64143e786f1e1bd62a1982532b4d0031))
+* Debug git push. ([6536ad2](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/6536ad2fd1abf5333b7d72f356473b3bcea59f81))
+* Disable pre-push hook. ([01d22c4](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/01d22c43fec8df7cafacf69e340812eed73a32e5))
+* Enforce branch name structure. ([9d51966](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/9d519669e250ddbb941283bcb37ccb4a9e4e1e11))
+* Pushes within github failing. ([83db0ed](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/83db0ede2126c2ef4b0634fd2f70959b7a87df02))
+* Try new built in action to push. ([2246c2b](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/2246c2b430e9f4cbd5bfe508f54cb8aeabc9853b))
+
 <a name="0.0.3"></a>
 ## [0.0.3](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.0.3) (2023-5-1)
 
