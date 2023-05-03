@@ -3,11 +3,15 @@
 
 while read local_ref local_sha remote_ref remote_sha
 do
-  reg="^refs/heads/(feature|bugfix|experiment)/[A-Z][a-z0-9]+(-[a-z0-9]+)*$|^refs/heads/(main|develop)|develop$"
+  reg="^refs/heads/(feature|bugfix|experiment)/[A-Z][a-z0-9]+(-[a-z0-9]+)*$|^refs/heads/(main|develop)$"
   # Check if the branch being pushed matches the desired format
   if [[ "$local_ref" =~  $reg ]]; then
   	exit 0
   else
+    echo "$local_ref" 
+    echo "$local_sha" 
+    echo "$remote_ref" 
+    echo "$remote_sha"
     echo "Error: Branch name must be one of the following: 
     feature/*,
     bugfix/*, 
