@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.2) (2023-5-3)
+
+### Bug Fixes
+
+* Run releases only on main PR. ([20d966b](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/20d966bbac4029a3fece77b5a78a4ba4bb9c0a21))
+
+### Other
+
+* Merge 3926ac732fbfece6b1b67048f7ad966f5ba43f56 into 77d6568e0b9867a115e54d0e8ee44bd949065484 ([e8a5198](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/e8a519884af600a7a316ff7f0b08851190b76490))
+* Revert shebang interpreter. ([3926ac7](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/3926ac732fbfece6b1b67048f7ad966f5ba43f56))
+* **git pre-push:** Change shell interpreter. ([1365beb](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/1365beb04f7d8996b52b71cfdd6867e808502c54))
+* **pre-push hook:** Reformat git pre-push git hooks. ([5d8e49b](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/5d8e49b777e71875cc32c8178344a6f0058bcc1c))
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.1) (2023-5-3)
 
