@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.1) (2023-5-3)
+
+### Bug Fixes
+
+* Allow pushes if local or remote branch name conforms. ([812d370](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/812d37094b8c320b20cba1674f745d1f63bb5e00))
+* Enable pre-push githook. ([dd7741f](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/dd7741f860ba565f856dec6574713a71185520b5))
+
+### Other
+
+* Merge 812d37094b8c320b20cba1674f745d1f63bb5e00 into 45f5860c7a9b4368e721d4de37a7debf3dd20177 ([28f7d3e](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/28f7d3e4e0178b1142732a520325e64265278947))
+* Debug ci. ([91bc69f](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/91bc69f32b260bbc3d4bd270f836734a1833fd23))
+
 <a name="0.1.0"></a>
 ## [0.1.0](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.0) (2023-5-3)
 
