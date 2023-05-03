@@ -61,7 +61,7 @@ jobs:
           tags: true
           
       - name: "Create release"
-        if: steps.versionize.outcome == 'success' && github.event_name == 'pull_request' && github.base_ref == 'main'
+        if: github.event_name == 'pull_request' && github.base_ref == 'main'
         uses: "actions/github-script@v5"
         with:
           github-token: "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}"
