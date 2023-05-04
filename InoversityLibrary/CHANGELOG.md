@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.3"></a>
+## [0.1.3](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.3) (2023-5-4)
+
+### Bug Fixes
+
+* Add ORM. This is not really a fix. We are testing here. ([e12b7c6](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/e12b7c6fdd01177f3b946a59500564d14ea88a32))
+
+### Other
+
+* Merge e12b7c6fdd01177f3b946a59500564d14ea88a32 into 6c943b40699330254057414aecc976b954db9d6b ([d4eedb2](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/d4eedb26058c8e3d26ed25266317950664db9935))
+* Merge pull request #27 from MduduziMlilo/feature/Continous-intergration ([37f36ab](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/37f36ab1850ccd17e83923985757677367ee15ef))
+* Merge pull request #29 from MduduziMlilo/main ([7c35467](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/7c354672a8f72a5b5f5b2980b9ed89eb51e7317d))
+* Git tagging take care of by versioning. ([226fb83](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/226fb83dcf321ecd037833958bf62064cb5af4cb))
+* Remove versionize outcome check. ([9b52087](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/9b520875b26bde81ea5a0173140533a8cb0d5f70))
+* **Release:** 0.1.1 ([9c99fb9](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/9c99fb96c3ed4272d60a5067addce66b0f187c91))
+* **Release:** 0.1.3 ([6c943b4](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/6c943b40699330254057414aecc976b954db9d6b))
+* **Release:** 0.1.3 ([a414da0](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/a414da0a8ab81981e838da28b0d1067933deae75))
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.2) (2023-5-3)
 
