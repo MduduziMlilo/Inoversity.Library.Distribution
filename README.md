@@ -72,3 +72,15 @@ This section outlines the setup for a docker container.
 - [ ] Kubernetes cluster integration [Continuous Deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 - [ ] Event messaging integration
 - [ ] Api Stress Testing
+
+## Domain Rules
+ 
+1. Have a list of users.  
+   - A user can borrow documents from the library for research.
+   - If a user is not part of the users in the system, they should not be able to borrow documents.
+   - A user should be only restricted to possess a maximum 5 documents from the library at a time.
+   - Should a user have 5 documents in their posession, they can return documents to the library if they want to borrow other documents.
+   - A user should not be able to borrow documents that they already have.
+2. Have a list of documents in the library.
+   - The library can have different types of documents.
+   - Copies of each document is assumed to be infinity (i.e a lot of users can borrow the same document without running out of copies.)
