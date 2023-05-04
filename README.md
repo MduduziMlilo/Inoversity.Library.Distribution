@@ -84,3 +84,5 @@ This section outlines the setup for a docker container.
 2. Have a list of documents in the library.
    - The library can have different types of documents.
    - Copies of each document is assumed to be infinity (i.e a lot of users can borrow the same document without running out of copies.)
+3. Have a list of accounts accounts to users.
+   - Each user in the system should only be linked to one account.
