@@ -64,7 +64,6 @@ This section outlines the setup for a docker container.
 
 ### Feature Backlog
 - [ ] UnitTesting
-- [ ] Git tagging
 - [ ] Authentication
 - [ ] Documentation
 - [ ] Authorisation
