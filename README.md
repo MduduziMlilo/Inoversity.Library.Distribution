@@ -67,6 +67,7 @@ This section outlines the setup for a docker container.
 - [ ] Authentication
 - [ ] Documentation
 - [ ] Authorisation
+- [ ] ORM
 - [ ] Database migrations
 - [ ] Kubernetes cluster integration [Continuous Deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 - [ ] Event messaging integration
