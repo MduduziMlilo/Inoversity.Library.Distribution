@@ -76,13 +76,16 @@ This section outlines the setup for a docker container.
 ## Domain Rules
  
 1. Have a list of users.  
-   - A user can borrow documents from the library for research.
-   - If a user is not part of the users in the system, they should not be able to borrow documents.
-   - A user should be only restricted to possess a maximum 5 documents from the library at a time.
-   - Should a user have 5 documents in their posession, they can return documents to the library if they want to borrow other documents.
-   - A user should not be able to borrow documents that they already have.
+   - A user can loan document(s) from the library.
+   - A user is restricted to be in possession a maximum of five documents loaned from the library.
+   - A user can not loan copies of a document they have checked out.
+   - Only a registered user can checkout a library document.
+   - A user can not return a document they did not check out.
+   - A user can book a document for checkout at a future date (Not longer than 60 days from booking date).
 2. Have a list of documents in the library.
-   - The library can have different types of documents.
-   - Copies of each document is assumed to be infinity (i.e a lot of users can borrow the same document without running out of copies.)
+   - The library keeps different types of documents.
+   - The number of copies of each document is assumed to be infinity.
+   - Some documents can only be viewed within the library premises (i.e can not be checked out).
 3. Have a list of accounts accounts to users.
-   - Each user in the system should only be linked to one account.
+   - An account can only be linked to a unique library user.
+   - Charges are applied on accounts with overdue documents.
