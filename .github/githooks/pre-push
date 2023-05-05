@@ -10,6 +10,7 @@ do
     echo "Error: Local or remote branch name must be one of the following conventions: 
     feature/*,
     bugfix/*, 
+    experiment/*, 
     main, 
     develop.
     The * can be any string that respects the following regular expression: [A-Z][a-z0-9]+(-[a-z0-9]+)*$
