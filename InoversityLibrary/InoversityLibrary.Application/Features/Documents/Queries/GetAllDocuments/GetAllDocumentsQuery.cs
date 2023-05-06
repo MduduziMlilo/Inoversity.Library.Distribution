@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InoversityLibrary.Application.Features.Documents.Queries.GetAllDocuments;
 
-public abstract record GetAllDocumentsQuery : IRequest<Result<List<GetAllDocumentsDto>>>;
+public record GetAllDocumentsQuery : IRequest<Result<List<GetAllDocumentsDto>>>;
 
 internal class GetAllDocumentsQueryHandler: IRequestHandler<GetAllDocumentsQuery, Result<List<GetAllDocumentsDto>>>
 {
