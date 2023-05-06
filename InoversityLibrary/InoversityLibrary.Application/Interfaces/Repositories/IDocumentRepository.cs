@@ -4,6 +4,6 @@ namespace InoversityLibrary.Application.Interfaces.Repositories;
 
 public interface IDocumentRepository
 {
-    Task<List<Document>> GetDocumentByAuthorAsync(int authorId);
-    
+    Task<List<Document>> GetDocumentsByAuthorAsync(int authorId);
+
 }

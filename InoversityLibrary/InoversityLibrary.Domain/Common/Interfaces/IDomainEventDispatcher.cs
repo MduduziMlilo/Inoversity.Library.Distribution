@@ -1,6 +1,6 @@
 namespace InoversityLibrary.Domain.Common.Interfaces;
 
-public interface IDomainEnventDispatcher
+public interface IDomainEventDispatcher
 {
     Task DispatchAndClearEvents(IEnumerable<BaseEntity> entitiesWithEvents);
 }
