@@ -5,14 +5,19 @@ namespace InoversityLibrary.Domain.Entities;
 
 public class Document: BaseAuditableEntity
 {
-    public Document(string title, string author, string publisher)
+    public static Document Create(string title, string author, string publisher, DateTime publishedDate)
     {
-        Title = title;
-        Author = author;
-        Publisher = publisher;
+        return new Document()
+        {
+            Title = title,
+            Author = author,
+            Publisher = publisher,
+            PublishedDate = publishedDate
+        };
     }
 
     public string Title { get; set; }
     public string Author { get; set; }
     public string Publisher { get; set; }
+    public DateTime PublishedDate { get; set; }
 }

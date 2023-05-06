@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Infrastructure.Distribution", "InoversityLibrary.Infrastructure.Distribution\InoversityLibrary.Infrastructure.Distribution.csproj", "{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A49348F4-DCF5-4348-B403-A9138EA7C0AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Shared", "InoversityLibrary.Shared\InoversityLibrary.Shared.csproj", "{F1927010-CB3E-4D8D-89DD-B9F22919287A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,10 @@ Global
 		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1927010-CB3E-4D8D-89DD-B9F22919287A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1927010-CB3E-4D8D-89DD-B9F22919287A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1927010-CB3E-4D8D-89DD-B9F22919287A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1927010-CB3E-4D8D-89DD-B9F22919287A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{99DEBAA1-F19F-41B4-8D2B-0C09FF4E35E1} = {2F260163-3FF0-4D3E-9193-0B10FD974C98}
@@ -63,5 +71,6 @@ Global
 		{0A88305D-E47F-46AF-B0CC-7E245377AC20} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
 		{894CDB46-6956-4C76-9642-511FD83BD946} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
 		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
+		{F1927010-CB3E-4D8D-89DD-B9F22919287A} = {A49348F4-DCF5-4348-B403-A9138EA7C0AC}
 	EndGlobalSection
 EndGlobal

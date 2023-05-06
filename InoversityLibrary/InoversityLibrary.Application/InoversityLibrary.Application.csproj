@@ -15,4 +15,13 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\InoversityLibrary.Domain\InoversityLibrary.Domain.csproj" />
+      <ProjectReference Include="..\InoversityLibrary.Shared\InoversityLibrary.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\Documents\Queries\GetDocumentsByAuthor\" />
+    </ItemGroup>
+
 </Project>
