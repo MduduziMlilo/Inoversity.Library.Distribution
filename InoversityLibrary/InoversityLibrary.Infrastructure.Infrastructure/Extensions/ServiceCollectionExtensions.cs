@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace InoversityLibrary.Infrastructure.Infrastructure.Extensions;
 
-public static class IServiceCollectionExtensions
+public static class ServiceCollectionExtensions
 {
     public static void AddInfrastructureLayer(this IServiceCollection services)
     {

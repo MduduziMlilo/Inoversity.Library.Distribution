@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace InoversityLibrary.Application.Extensions;
 
-public static class IServiceCollectionExtensions
+public static class ServiceCollectionExtensions
 {
     public static void AddApplicationLayer(this IServiceCollection services)
     {

@@ -7,11 +7,10 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace InoversityLibrary.DataAccess.Extensions;
 
-public static class IServiceCollectionExtensions
+public static class ServiceCollectionExtensions
 {
     public static void AddDataAccessLayer(this IServiceCollection services, IConfiguration configuration)
     {
-        //services.AddMappings();
         services.AddDbContext(configuration);
         services.AddRepositories();
     }
