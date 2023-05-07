@@ -18,8 +18,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Infrastructure.Integration", "InoversityLibrary.Infrastructure.Integration\InoversityLibrary.Infrastructure.Integration.csproj", "{894CDB46-6956-4C76-9642-511FD83BD946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Distribution.WebApi", "InoversityLibrary.Distribution.WebApi\InoversityLibrary.Distribution.WebApi.csproj", "{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A49348F4-DCF5-4348-B403-A9138EA7C0AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoversityLibrary.Shared", "InoversityLibrary.Shared\InoversityLibrary.Shared.csproj", "{F1927010-CB3E-4D8D-89DD-B9F22919287A}"
@@ -58,10 +56,6 @@ Global
 		{894CDB46-6956-4C76-9642-511FD83BD946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894CDB46-6956-4C76-9642-511FD83BD946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894CDB46-6956-4C76-9642-511FD83BD946}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1927010-CB3E-4D8D-89DD-B9F22919287A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1927010-CB3E-4D8D-89DD-B9F22919287A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1927010-CB3E-4D8D-89DD-B9F22919287A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -80,6 +74,5 @@ Global
 		{894CDB46-6956-4C76-9642-511FD83BD946} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
 		{F1927010-CB3E-4D8D-89DD-B9F22919287A} = {A49348F4-DCF5-4348-B403-A9138EA7C0AC}
 		{9AB4F8CD-7DE0-4AC1-8C82-E766C972153B} = {C42C2921-0A02-4346-9B47-0F3DFA4C0D2C}
-		{F993DA89-E4E8-4B0D-BEC3-1ACE9D14C433} = {6F81CDF7-6E63-4576-9329-602AA9DD1354}
 	EndGlobalSection
 EndGlobal
