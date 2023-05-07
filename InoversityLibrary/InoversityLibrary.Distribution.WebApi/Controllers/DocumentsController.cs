@@ -4,7 +4,7 @@ using InoversityLibrary.Shared;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace InoversityLibrary.Infrastructure.Distribution.Controllers;
+namespace InoversityLibrary.Distribution.WebApi.Controllers;
 
 public class DocumentsController: ApiControllerBase
 {

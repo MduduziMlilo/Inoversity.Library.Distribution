@@ -22,6 +22,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\InoversityLibrary.Application\InoversityLibrary.Application.csproj" />
+      <ProjectReference Include="..\InoversityLibrary.Infrastructure.DataAccess\InoversityLibrary.Infrastructure.DataAccess.csproj" />
+      <ProjectReference Include="..\InoversityLibrary.Infrastructure.Infrastructure\InoversityLibrary.Infrastructure.Infrastructure.csproj" />
     </ItemGroup>
 
     <Target Name="CopyCustomContent" AfterTargets="AfterBuild">

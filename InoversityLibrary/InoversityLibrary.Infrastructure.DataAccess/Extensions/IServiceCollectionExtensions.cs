@@ -9,18 +9,13 @@ namespace InoversityLibrary.DataAccess.Extensions;
 
 public static class IServiceCollectionExtensions
 {
-    public static void AddPersistenceLayer(this IServiceCollection services, IConfiguration configuration)
+    public static void AddDataAccessLayer(this IServiceCollection services, IConfiguration configuration)
     {
         //services.AddMappings();
         services.AddDbContext(configuration);
         services.AddRepositories();
     }
-
-    //private static void AddMappings(this IServiceCollection services)
-    //{
-    //    services.AddAutoMapper(Assembly.GetExecutingAssembly());
-    //}
-
+    
     public static void AddDbContext(this IServiceCollection services, IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("DefaultConnection");

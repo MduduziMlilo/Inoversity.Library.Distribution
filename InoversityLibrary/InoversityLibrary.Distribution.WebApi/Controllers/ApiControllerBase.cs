@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace InoversityLibrary.Infrastructure.Distribution.Controllers;
+namespace InoversityLibrary.Distribution.WebApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
