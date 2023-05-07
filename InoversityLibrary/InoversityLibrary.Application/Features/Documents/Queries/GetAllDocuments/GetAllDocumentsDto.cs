@@ -1,3 +1,4 @@
+using System;
 using InoversityLibrary.Application.Common.Mappings;
 using InoversityLibrary.Domain.Entities;
 

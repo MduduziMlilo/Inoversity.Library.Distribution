@@ -20,4 +20,4 @@ COPY --from=build-env /src/publish ./
 
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "InoversityLibrary.Infrastructure.Distribution.dll"]
+ENTRYPOINT ["dotnet", "InoversityLibrary.Distribution.WebApi.dll"]

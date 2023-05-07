@@ -1,6 +1,9 @@
 using InoversityLibrary.DataAccess.Extensions;
 using InoversityLibrary.Application.Extensions;
 using InoversityLibrary.Infrastructure.Infrastructure.Extensions;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,3 +1,5 @@
+using System;
+
 namespace InoversityLibrary.Application.Common.Exceptions;
 
 public class NotFoundException: Exception
