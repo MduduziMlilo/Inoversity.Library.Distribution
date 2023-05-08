@@ -14,6 +14,11 @@ builder.Services.AddDataAccessLayer(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options => options.AddPolicy(name: "DocumentsOrigins",
+    policy =>
+    {
+        policy.WithOrigins("https://localhost:7100").AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    }));
 
 var app = builder.Build();
 
@@ -25,8 +30,8 @@ if (app.Environment.IsDevelopment())
     app.UseDeveloperExceptionPage();
 }
 
+app.UseCors("DocumentsOrigins");
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.MapControllers();

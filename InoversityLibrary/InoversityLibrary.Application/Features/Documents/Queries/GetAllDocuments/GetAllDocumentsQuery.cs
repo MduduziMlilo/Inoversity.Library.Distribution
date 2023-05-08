@@ -26,11 +26,17 @@ internal class GetAllDocumentsQueryHandler: IRequestHandler<GetAllDocumentsQuery
     
     public async Task<Result<List<GetAllDocumentsDto>>> Handle(GetAllDocumentsQuery query, CancellationToken cancellationToken)
     { 
-        var documents = await _unitOfWork.Repository<Document>().Entities
-            .ProjectTo<GetAllDocumentsDto>(_mapper.ConfigurationProvider)
-            .ToListAsync(cancellationToken);
+        // var documents = await _unitOfWork.Repository<Document>().Entities
+        //     .ProjectTo<GetAllDocumentsDto>(_mapper.ConfigurationProvider)
+        //     .ToListAsync(cancellationToken);
+        var documents = GetAllDocumentsDto.Create(id: 1,
+            title: "My Title",
+            author: "Sea Oater",
+            publisher: "My Publisher",
+            publishedDate: DateTime.UtcNow );
+        List<GetAllDocumentsDto> docs = new List<GetAllDocumentsDto>() {documents };
 
-        return await Result<List<GetAllDocumentsDto>>.SuccessAsync(documents);
+        return await Result<List<GetAllDocumentsDto>>.SuccessAsync(docs);
     }
     
 }
