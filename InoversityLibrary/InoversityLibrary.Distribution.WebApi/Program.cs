@@ -1,7 +1,9 @@
 using InoversityLibrary.DataAccess.Extensions;
 using InoversityLibrary.Application.Extensions;
+using InoversityLibrary.DataAccess.Contexts;
 using InoversityLibrary.Infrastructure.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -14,10 +16,14 @@ builder.Services.AddDataAccessLayer(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 builder.Services.AddCors(options => options.AddPolicy(name: "DocumentsOrigins",
     policy =>
     {
-        policy.WithOrigins("https://localhost:7100").AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins($"https://localhost:7100").AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
     }));
 
 var app = builder.Build();
