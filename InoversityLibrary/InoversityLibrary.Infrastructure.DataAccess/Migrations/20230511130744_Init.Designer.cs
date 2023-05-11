@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InoversityLibrary.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230510181744_Init")]
+    [Migration("20230511130744_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -62,7 +62,7 @@ namespace InoversityLibrary.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Documents");
+                    b.ToTable("Documents", "InoversityLibrary");
                 });
 #pragma warning restore 612, 618
         }

@@ -59,7 +59,7 @@ namespace InoversityLibrary.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Documents");
+                    b.ToTable("Documents", "InoversityLibrary");
                 });
 #pragma warning restore 612, 618
         }

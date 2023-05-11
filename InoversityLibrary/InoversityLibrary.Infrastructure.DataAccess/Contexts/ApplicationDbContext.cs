@@ -26,6 +26,8 @@ public class ApplicationDbContext: DbContext
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        modelBuilder.Entity<Document>()
+            .ToTable(name: "Documents", schema: "InoversityLibrary");
     }
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
@@ -50,4 +52,5 @@ public class ApplicationDbContext: DbContext
     {
         return SaveChangesAsync().GetAwaiter().GetResult();
     }
+    
 }
