@@ -4,11 +4,11 @@ using InoversityLibrary.Domain.Entities;
 
 namespace InoversityLibrary.Application.Features.Documents.Queries.GetAllDocuments;
 
-public class GetAllDocumentsDto: IMapFrom<Document>
+public class DocumentsDtoResult: IMapFrom<Document>
 {
-    public static GetAllDocumentsDto Create(int id, string title, string author, string publisher, DateTime publishedDate)
+    public static DocumentsDtoResult Create(int id, string title, string author, string publisher, DateTime publishedDate)
     {
-        return new GetAllDocumentsDto
+        return new DocumentsDtoResult
         {
             Id = id,
             Title = title,
