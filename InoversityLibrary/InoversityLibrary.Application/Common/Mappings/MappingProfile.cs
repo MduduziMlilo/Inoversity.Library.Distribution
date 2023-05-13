@@ -1,11 +1,9 @@
-using System;
-using System.Linq;
 using System.Reflection;
 using AutoMapper;
 
 namespace InoversityLibrary.Application.Common.Mappings;
 
-public class MappingProfile: Profile
+public class MappingProfile : Profile
 {
     public MappingProfile()
     {
@@ -18,11 +16,14 @@ public class MappingProfile: Profile
 
         var mappingMethodName = nameof(IMapFrom<object>.Mapping);
 
-        bool HasInterface(Type t) => t.IsGenericType && t.GetGenericTypeDefinition() == mapFromType;
+        bool HasInterface(Type t)
+        {
+            return t.IsGenericType && t.GetGenericTypeDefinition() == mapFromType;
+        }
 
         var types = assembly.GetExportedTypes().Where(t => t.GetInterfaces().Any(HasInterface)).ToList();
 
-        var argumentTypes = new Type[] { typeof(Profile) };
+        var argumentTypes = new[] { typeof(Profile) };
 
         foreach (var type in types)
         {
@@ -39,14 +40,12 @@ public class MappingProfile: Profile
                 var interfaces = type.GetInterfaces().Where(HasInterface).ToList();
 
                 if (interfaces.Count > 0)
-                {
                     foreach (var @interface in interfaces)
                     {
                         var interfaceMethodInfo = @interface.GetMethod(mappingMethodName, argumentTypes);
 
                         interfaceMethodInfo.Invoke(instance, new object[] { this });
                     }
-                }
             }
         }
     }

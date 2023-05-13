@@ -26,5 +26,5 @@ public static class ServiceCollectionExtensions
     private static void AddValidators(this IServiceCollection services)
     {
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-    }        
+    }
 }

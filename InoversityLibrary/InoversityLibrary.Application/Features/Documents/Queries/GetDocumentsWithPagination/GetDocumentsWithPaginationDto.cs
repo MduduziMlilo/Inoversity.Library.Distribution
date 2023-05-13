@@ -2,5 +2,4 @@ namespace InoversityLibrary.Application.Features.Documents.Queries.GetDocumentsW
 
 public class GetDocumentsWithPaginationDto
 {
-    
 }

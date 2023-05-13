@@ -7,7 +7,8 @@ public class PaginatedResult<T> : Result<T>
         Data = data;
     }
 
-    public PaginatedResult(bool succeeded, List<T> data = default, List<string> messages = null, int count = 0, int pageNumber = 1, int pageSize = 10)
+    public PaginatedResult(bool succeeded, List<T> data = default, List<string> messages = null, int count = 0,
+        int pageNumber = 1, int pageSize = 10)
     {
         Data = data;
         CurrentPage = pageNumber;

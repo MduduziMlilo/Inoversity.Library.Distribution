@@ -6,5 +6,4 @@ namespace InoversityLibrary.Distribution.WebApi.Controllers;
 [Route("api/[controller]")]
 public abstract class ApiControllerBase : ControllerBase
 {
-       
 }

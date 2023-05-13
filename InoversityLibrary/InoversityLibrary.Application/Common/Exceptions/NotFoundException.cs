@@ -1,11 +1,8 @@
-using System;
-
 namespace InoversityLibrary.Application.Common.Exceptions;
 
-public class NotFoundException: Exception
+public class NotFoundException : Exception
 {
     public NotFoundException()
-        : base()
     {
     }
 

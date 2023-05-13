@@ -1,15 +1,12 @@
-using System.Linq;
 using System.Reflection;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using InoversityLibrary.Domain.Common;
-using InoversityLibrary.Domain.Entities;
 using InoversityLibrary.Domain.Common.Interfaces;
+using InoversityLibrary.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace InoversityLibrary.DataAccess.Contexts;
 
-public class ApplicationDbContext: DbContext
+public class ApplicationDbContext : DbContext
 {
     private readonly IDomainEventDispatcher _dispatcher;
 
@@ -27,12 +24,12 @@ public class ApplicationDbContext: DbContext
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         modelBuilder.Entity<Document>()
-            .ToTable(name: "Documents", schema: "InoversityLibrary");
+            .ToTable("Documents", "InoversityLibrary");
     }
 
-    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
     {
-        int result = await base.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
+        var result = await base.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
 
         // ignore events if no dispatcher provided
         if (_dispatcher == null) return result;
@@ -52,5 +49,4 @@ public class ApplicationDbContext: DbContext
     {
         return SaveChangesAsync().GetAwaiter().GetResult();
     }
-    
 }

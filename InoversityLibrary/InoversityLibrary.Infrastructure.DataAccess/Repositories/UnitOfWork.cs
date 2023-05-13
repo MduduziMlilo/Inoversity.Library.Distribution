@@ -1,15 +1,11 @@
-using System;
 using System.Collections;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using InoversityLibrary.Application.Interfaces.Repositories;
 using InoversityLibrary.DataAccess.Contexts;
 using InoversityLibrary.Domain.Common;
 
 namespace InoversityLibrary.DataAccess.Repositories;
 
-public class UnitOfWork: IUnitOfWork
+public class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationDbContext _dbContext;
     private Hashtable _repositories;
@@ -36,7 +32,7 @@ public class UnitOfWork: IUnitOfWork
             _repositories.Add(type, repositoryInstance);
         }
 
-        return (IGenericRepository<T>) _repositories[type];
+        return (IGenericRepository<T>)_repositories[type];
     }
 
     public Task Rollback()
@@ -64,13 +60,9 @@ public class UnitOfWork: IUnitOfWork
     protected virtual void Dispose(bool disposing)
     {
         if (disposed)
-        {
             if (disposing)
-            {
                 //dispose managed resources
                 _dbContext.Dispose();
-            }
-        }
         //dispose unmanaged resources
         disposed = true;
     }

@@ -1,10 +1,7 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using InoversityLibrary.Domain.Common;
-using InoversityLibrary.DataAccess.Contexts;
 using InoversityLibrary.Application.Interfaces.Repositories;
+using InoversityLibrary.DataAccess.Contexts;
+using InoversityLibrary.Domain.Common;
+using Microsoft.EntityFrameworkCore;
 
 namespace InoversityLibrary.DataAccess.Repositories;
 
@@ -27,7 +24,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseAuditabl
 
     public Task UpdateAsync(T entity)
     {
-        T exist = _dbContext.Set<T>().Find(entity.Id);
+        var exist = _dbContext.Set<T>().Find(entity.Id);
         _dbContext.Entry(exist).CurrentValues.SetValues(entity);
         return Task.CompletedTask;
     }

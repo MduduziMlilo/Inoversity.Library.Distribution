@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using InoversityLibrary.Application.Interfaces.Repositories;
@@ -13,24 +10,24 @@ namespace InoversityLibrary.Application.Features.Documents.Queries.GetAllDocumen
 
 public record GetAllDocumentsQuery : IRequest<Result<List<DocumentsDtoResult>>>;
 
-internal class GetAllDocumentsQueryHandler: IRequestHandler<GetAllDocumentsQuery, Result<List<DocumentsDtoResult>>>
+internal class GetAllDocumentsQueryHandler : IRequestHandler<GetAllDocumentsQuery, Result<List<DocumentsDtoResult>>>
 {
-    private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
-    
+    private readonly IUnitOfWork _unitOfWork;
+
     public GetAllDocumentsQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
     }
-    
-    public async Task<Result<List<DocumentsDtoResult>>> Handle(GetAllDocumentsQuery query, CancellationToken cancellationToken)
-    { 
+
+    public async Task<Result<List<DocumentsDtoResult>>> Handle(GetAllDocumentsQuery query,
+        CancellationToken cancellationToken)
+    {
         var documents = await _unitOfWork.Repository<Document>().Entities
             .ProjectTo<DocumentsDtoResult>(_mapper.ConfigurationProvider)
             .ToListAsync(cancellationToken);
-        
+
         return await Result<List<DocumentsDtoResult>>.SuccessAsync(documents);
     }
-    
 }

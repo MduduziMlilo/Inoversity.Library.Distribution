@@ -14,7 +14,7 @@ public static class ServiceCollectionExtensions
         services.AddDbContext(configuration);
         services.AddRepositories();
     }
-    
+
     public static void AddDbContext(this IServiceCollection services, IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("DefaultConnection");

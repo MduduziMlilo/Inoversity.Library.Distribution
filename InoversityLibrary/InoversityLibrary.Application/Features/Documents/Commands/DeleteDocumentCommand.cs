@@ -7,18 +7,13 @@ using MediatR;
 
 namespace InoversityLibrary.Application.Features.Documents.Commands;
 
-public class DeleteDocumentCommand: IRequest<Result<int>>, IMapFrom<Document>
+public class DeleteDocumentCommand : IRequest<Result<int>>, IMapFrom<Document>
 {
     public int Id { get; set; }
 
-    public DeleteDocumentCommand()
-    {
-
-    }
-
     public static DeleteDocumentCommand Delete(int id)
     {
-        return new DeleteDocumentCommand()
+        return new DeleteDocumentCommand
         {
             Id = id
         };
@@ -27,8 +22,8 @@ public class DeleteDocumentCommand: IRequest<Result<int>>, IMapFrom<Document>
 
 internal class DeleteDocumentCommandHandler : IRequestHandler<DeleteDocumentCommand, Result<int>>
 {
-    private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
+    private readonly IUnitOfWork _unitOfWork;
 
     public DeleteDocumentCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
     {
@@ -39,19 +34,17 @@ internal class DeleteDocumentCommandHandler : IRequestHandler<DeleteDocumentComm
     public async Task<Result<int>> Handle(DeleteDocumentCommand command, CancellationToken cancellationToken)
     {
         var document = await _unitOfWork.Repository<Document>().GetByIdAsync(command.Id);
-        
+
         if (document != null)
         {
             await _unitOfWork.Repository<Document>().DeleteAsync(document);
-            document.AddDomainEvent(new DocumentDeletedEvent(document: document));
+            document.AddDomainEvent(new DocumentDeletedEvent(document));
 
             await _unitOfWork.Save(cancellationToken);
 
             return await Result<int>.SuccessAsync(document.Id, "Document Deleted");
         }
-        else
-        {
-            return await Result<int>.FailureAsync("Document Not Found.");
-        }
+
+        return await Result<int>.FailureAsync("Document Not Found.");
     }
 }
