@@ -15,7 +15,7 @@ public class DocumentsController : ApiControllerBase
         _mediator = mediator;
     }
 
-    [HttpGet("all")]
+    [HttpGet("[action]")]
     public async Task<ActionResult<Result<List<DocumentsDtoResult>>>> GetAllDocuments()
     {
         var result = await _mediator.Send(new GetAllDocumentsQuery());
