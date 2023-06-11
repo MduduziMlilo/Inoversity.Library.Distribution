@@ -22,14 +22,14 @@ public class DocumentsController : ApiControllerBase
         return Ok(result);
     }
 
-    [HttpPost("add")]
-    public async Task<ActionResult<Result<int>>> CreateDocument(CreateDocumentCommand command)
+    [HttpPost("[action]")]
+    public async Task<ActionResult<Result<int>>> AddDocument(CreateDocumentCommand command)
     {
         var result = await _mediator.Send(command);
         return Ok(result);
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("[action]/{id}")]
     public async Task<ActionResult<Result<int>>> DeleteDocument(int id)
     {
         var result = await _mediator.Send(DeleteDocumentCommand.Delete(id));
