@@ -1,6 +1,6 @@
 namespace InoversityLibrary.Domain.Common.Interfaces;
 
-public interface IAuditableEntity: IEntity
+public interface IAuditableEntity : IEntity
 {
     int? CreatedBy { get; set; }
     DateTime? CreatedDate { get; set; }

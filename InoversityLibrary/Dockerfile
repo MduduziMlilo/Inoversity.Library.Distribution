@@ -20,4 +20,5 @@ COPY --from=build-env /src/publish ./
 
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "InoversityLibrary.Infrastructure.Distribution.dll"]
+# Execute command on container startup.
+ENTRYPOINT ["dotnet", "InoversityLibrary.Distribution.WebApi.dll"]
