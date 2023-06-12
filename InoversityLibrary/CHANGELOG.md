@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.2.0"></a>
+## [0.2.0](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.2.0) (2023-6-12)
+
+### Features
+
+* Add authorization to api endpoints. ([14df88c](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/14df88c1425438af2facaa4dbe99d52fcdd06fc7))
+* Add document deletion. ([a9b3986](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/a9b398626b663b721e4676a41f7f8871dd21f61b))
+
+### Bug Fixes
+
+* Fix failing versionize ci release creation. ([5b2dbb8](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/5b2dbb8c78e68574974aae474463b8de53b0acfa))
+
+### Other
+
+* Define library business rules. ([ee3d846](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/ee3d846e0bfd71c4d9c3c6d70d440f222470057c))
+* Merge 5b2dbb8c78e68574974aae474463b8de53b0acfa into 2734d05401355e1b187d2d6eab9bafb6391c00cf ([db7951d](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/db7951d4f49799b254f38ee3d0191316ac25e258))
+* Merge pull request #31 from MduduziMlilo/develop ([1b2a59b](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/1b2a59be1995fb214233dcb317f6a8c7e1be2ff6))
+* Merge pull request #36 from MduduziMlilo/feature/Model-domain-user ([9cafdcc](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/9cafdcc872d9b0b1fcf913e67ae0294c2add9d67))
+* Merge pull request #37 from MduduziMlilo/feature/Model-domain-user ([43d0238](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/43d0238b3cf19329e2cfadbb4619368df796a4ca))
+* Merge pull request #39 from MduduziMlilo/feature/Model-domain-user ([2734d05](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/2734d05401355e1b187d2d6eab9bafb6391c00cf))
+* Test fix release. ([c0c5f3c](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/c0c5f3c8ed269ac6607dcda2ecdfa438570500e0))
+* Add application repository. ([bbec7e8](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/bbec7e826ba20845a7c57c6674e254355bde9565))
+* Add library document entity. ([0ba68e7](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/0ba68e7f9bd4c3e89f28aac095f736f638ea1298))
+* Add more branch types to trigger build. ([790f4a4](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/790f4a45f0b2e0107b34148556f2b86c08df483a))
+* Add services and slight refactors. ([eb0dc3f](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/eb0dc3f668b49c138baaec0b8b9bba0807c6ee65))
+* Adding document functionality. ([bb44edd](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/bb44edd4a26e4646d3a1927b0c81312e5bd3545c))
+* Code cleanup. ([d3ba7c5](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/d3ba7c52c998874d152327c326043da27247bcc4))
+* Disable authorization. ([5f78cc2](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/5f78cc2e34b4f2f52ae06c010e54f74d125f02b1))
+* Enable CORS. ([b91f3ea](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/b91f3ea3f55c78427b2b25120d3564b7c9456a03))
+* Fixed docker build issues. ([f9ce2b8](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/f9ce2b8a2b866708e1c1a5425c75d934e0715a9f))
+* Refactor service class names. ([ae1a168](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/ae1a168774a774b548f0cbc2450723734da5b42c))
+* Remove distribution project. ([7b69747](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/7b697478b16fd3bbb95653126c4aa879f25c9e79))
+* Rename swagger api header. ([1ed2311](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/1ed2311854a8c067ac5c4d7d4c5dd56b1c167dbd))
+* Some import stuff. ([80c0a90](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/80c0a90e511225aa71690ef9ea77d464192d30fe))
+* Some small refactors. ([7d5232b](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/7d5232b86c4da309f651296736acd89aef6a2e96))
+* Swagger docs are up. ([4b16fca](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/4b16fca5e11d40c6b1dccac499b766178e4208d4))
+* There is a working Dockerfile now. ([f9cd839](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/f9cd839be7f57f313cc17c505762684900fbf09c))
+* Tweak domain rules. ([c34f7f3](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/c34f7f3e88ac2dd8358939ce50e523cdee3c89a4))
+* Update github pushing conditional. ([594461d](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/594461d719885753d40223a414438394efba1d10))
+* Update pre-push error message. ([79c2d50](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/79c2d50024a332bcd195da6866110a7066049b8a))
+* Update release condition. ([8f40731](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/8f407316da744a6d261a8aab1cdd6c1c5a653c04))
+* **DB Migrations:** Add migrations. ([a8d1bde](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/a8d1bde6b88f53cecde90b0475375d85b97d10ba))
+* **Domain model:** Add user and Document business rules. ([11f9047](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/11f90476311cbeedbd0bb5a35b136de10feb541c))
+* **Domain model:** Users should have accounts. ([93eeed7](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/93eeed73f9fde50e06ab1402b3b343858867a60f))
+* **Migrations:** Refactor migrations. ([9347f60](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/9347f60196dbd7c96af84d9b23c2187df94019d8))
+
 <a name="0.1.3"></a>
 
 ## [0.1.3](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.1.3) (2023-5-4)
