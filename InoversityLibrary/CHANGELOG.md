@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.2.1) (2023-6-12)
+
+### Bug Fixes
+
+* Fixed tags and now fixing release. ([b8f901a](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/b8f901a4bbe3097c0037c847884346bed3410c99))
+
+### Other
+
+* Merge b8f901a4bbe3097c0037c847884346bed3410c99 into b56206a2e50be49bdac5937bc6fd431d235fa017 ([67452a6](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/commit/67452a63b60ecca3bedd625fa242c98232b4a42b))
+
 <a name="0.2.0"></a>
 ## [0.2.0](https://www.github.com/MduduziMlilo/Inoversity.Library.WebApi/releases/tag/v0.2.0) (2023-6-12)
 
